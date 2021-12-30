@@ -1,0 +1,340 @@
+@media (max-width: 1270px) {
+   .container {
+      width: 990px;
+   }
+   :root {
+      --name: 55px;
+   }
+}
+@media (max-width: 1070px) {
+   .container {
+      width: 870px;
+   }
+   :root {
+      --name: 50px;
+      --intro: 25px;
+      --title: 22px;
+      --sub-title: 20px;
+      --text: 18px;
+      --nav-fs: 12px;
+   }
+   .header-link a {
+      font-size: var(--nav-fs);
+   }
+   .main-wrap-photo {
+      max-width: 327px;
+   }
+   .contacts {
+      transform: translateX(0px);
+      min-width: 344px;
+   }
+   .hobbies-icon {
+      font-size: 60px;
+   }
+}
+
+@media (max-width: 870px) {
+   .container {
+      width: calc(100% - 30px);
+   }
+   :root {
+      --name: 40px;
+      --intro: 20px;
+      --title: 18px;
+      --sub-title: 16px;
+      --text: 14px;
+      --nav-fs: 11px;
+   }
+   .header-link a {
+      font-size: var(--nav-fs);
+   }
+   .main-wrap-photo {
+      max-width: 327px;
+   }
+   .popup.active {
+      max-width: 500px;
+   }
+   .contacts {
+      min-width: 344px;
+   }
+   .hobbies-icon {
+      font-size: 55px;
+   }
+   .porfolio-card {
+      max-width: 200px;
+   }
+   .card-name h3 {
+      transform: translateY(-340%);
+   }
+}
+@media (max-width: 769px) {
+   .container {
+      width: calc(100% - 30px);
+   }
+   :root {
+      --name: 40px;
+      --intro: 20px;
+      --title: 18px;
+      --sub-title: 16px;
+      --text: 14px;
+      --nav-fs: 15px;
+      --main-margin: 30px;
+   }
+   .header-link a {
+      font-size: var(--nav-fs);
+      line-height: 16px;
+      color: #fafafa;
+   }
+   .header-link {
+      margin: 10px 30px;
+   }
+   .header-link a:before {
+      display: none;
+   }
+   .header-wrap {
+      display: none;
+   }
+
+   .burger-menu-icon {
+      display: block;
+      position: fixed;
+   }
+   .main-wrap-photo {
+      max-width: 327px;
+   }
+   .txt {
+      padding: 0 15px;
+   }
+   .course-open {
+      width: 40px;
+      height: 20px;
+      font-size: var(--text);
+      line-height: 18px;
+   }
+   .contacts {
+      min-width: 344px;
+   }
+   .skill img {
+      width: 30px;
+   }
+   .hobbies-icon {
+      font-size: 45px;
+   }
+   .popup.active {
+      max-width: 400px;
+   }
+   .porfolio-card {
+      max-width: 200px;
+   }
+   .card-name h3 {
+      transform: translateY(-340%);
+   }
+   .rsschool img {
+      max-width: 100px;
+   }
+}
+
+@media (max-width: 720px) {
+   .container {
+      width: calc(100% - 30px);
+   }
+   :root {
+      --name: 30px;
+      --intro: 18px;
+      --title: 18px;
+      --sub-title: 16px;
+      --text: 14px;
+      --nav-fs: 15px;
+   }
+   .header-link a {
+      font-size: var(--nav-fs);
+      line-height: 16px;
+      color: #fafafa;
+   }
+
+   .burger-menu-icon {
+      display: block;
+      position: fixed;
+   }
+   .main-wrap-photo {
+      max-width: 287px;
+   }
+   .txt {
+      padding: 0 15px;
+   }
+   .contacts {
+      min-width: 284px;
+   }
+   .contact {
+      margin-left: 20px;
+      margin-bottom: 15px;
+   }
+   .contacts > h3 {
+      margin: var(--main-margin);
+   }
+   .skill img {
+      width: 30px;
+   }
+   .hobbies-icon {
+      font-size: 45px;
+   }
+   .popup.active {
+      max-width: 400px;
+   }
+   .porfolio-card {
+      max-width: 150px;
+   }
+   .card-name h3 {
+      transform: translateY(-310%);
+   }
+   .rsschool img {
+      max-width: 100px;
+   }
+}
+@media (max-width: 620px) {
+   .container {
+      width: calc(100% - 30px);
+   }
+   :root {
+      --title: 16px;
+      --sub-title: 14px;
+      --text: 13px;
+   }
+   .main-wrap-photo {
+      max-width: 237px;
+   }
+   .txt {
+      padding: 0 15px;
+   }
+   .contacts {
+      min-width: 284px;
+   }
+   .contact {
+      margin-left: 20px;
+      margin-bottom: 15px;
+   }
+   .contacts > h3 {
+      margin: var(--main-margin);
+   }
+   .skill img {
+      width: 30px;
+   }
+   .hobbies-icon {
+      font-size: 35px;
+   }
+   .popup.active {
+      max-width: 300px;
+   }
+   .porfolio-card {
+      max-width: 150px;
+   }
+   .card-name h3 {
+      transform: translateY(-310%);
+   }
+   .rsschool img {
+      max-width: 80px;
+   }
+   .github img {
+      max-width: 35px;
+   }
+}
+@media (max-width: 530px) {
+   .container {
+      width: 100%;
+   }
+   :root {
+      --title: 16px;
+      --sub-title: 14px;
+      --text: 13px;
+   }
+   .burger-navigation {
+      width: 60%;
+   }
+   .main-wrap {
+      flex-direction: column-reverse;
+      text-align: center;
+   }
+   .main-wrap-photo {
+      max-width: 237px;
+      margin: 0 0 var(--main-margin) 0;
+   }
+   .about-wrap {
+      flex-direction: column;
+   }
+   .text {
+      padding: 0 15px;
+   }
+   .contacts {
+      border-radius: 0;
+      text-align: center;
+   }
+   .contact {
+      margin-left: 0;
+      margin-bottom: 15px;
+   }
+   .skills-wrap {
+      flex-direction: column;
+   }
+   .skills-left,
+   .skills-center,
+   .skills-right {
+      display: flex;
+      justify-content: space-around;
+      margin: 5px 0;
+   }
+   .skill img {
+      width: 30px;
+   }
+   .education-wrap,
+   .course-wrap {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .course > span:before {
+      display: none;
+   }
+   .education-status {
+      margin: 0 0 var(--main-margin) 0;
+   }
+   .portfolio-cards-block {
+      flex-direction: column;
+      align-items: center;
+   }
+   .hobbies-icon {
+      font-size: 30px;
+   }
+   .popup {
+      left: 0;
+   }
+   .popup.active {
+      max-width: 300px;
+   }
+   .porfolio-card {
+      max-width: 250px;
+   }
+   .card-name h3 {
+      transform: translateY(0);
+   }
+   .card-img:after {
+      display: none;
+   }
+   .code-example {
+      padding: 0 15px;
+   }
+   .footer-wrap {
+      justify-content: space-around;
+   }
+   .rsschool img {
+      max-width: 60px;
+   }
+   .github img {
+      max-width: 25px;
+   }
+}
+@media (max-width: 375px) {
+   .hobbies-icons {
+      flex-wrap: wrap;
+   }
+}
