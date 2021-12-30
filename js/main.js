@@ -23,3 +23,15 @@ wayupFigma.addEventListener('click', () => {
 	geekPopUp.classList.remove('active');
 
 })
+// burger menu
+
+let burgIcon = document.querySelector('.burger-menu-icon');
+
+if (burgIcon) {
+	let burgMenu = document.querySelector('.burger-navigation');
+	burgIcon.addEventListener("click", function (e) {
+		burgMenu.classList.toggle('active');
+		burgIcon.classList.toggle('active');
+
+	})
+}

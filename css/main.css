@@ -31,6 +31,8 @@ ul {
    --sub-title: 25px;
    --text: 25px;
    --main-color: #e0edff;
+   --nav-fs: 14px;
+   --main-margin: 50px;
 }
 .container {
    margin: 0 auto;
@@ -52,15 +54,76 @@ h3 {
    font-size: var(--title);
 }
 .burger-navigation {
+   display: flex;
+   position: fixed;
+   top: 0;
+   left: 0;
+   transform: translateY(-130%);
+   width: 45%;
+   z-index: 22;
+   background-color: rgb(0, 92, 145, 0.9);
+   border-radius: 0 0 5px 0;
+   transition: all 0.3s ease;
+   transition-delay: 0.1s;
+}
+.burger-navigation.active {
+   display: flex;
+   top: 60px;
+   transform: translateY(0);
+   transition: all 0.3s ease;
+}
+.burger-menu-icon {
    display: none;
+   position: absolute;
+   top: 18px;
+   left: 10px;
+   width: 30px;
+   height: 18px;
+   cursor: pointer;
+   z-index: 5;
+}
+.burger-menu-icon span {
+   -webkit-transition: all 0.3s ease 0s;
+   -o-transition: all 0.3s ease 0s;
+   transition: all 0.3s ease 0s;
+   top: 8px;
+   left: 0px;
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   background-color: #000;
+}
+.burger-menu-icon span:first-child {
+   top: 0px;
+}
+.burger-menu-icon span:last-child {
+   top: auto;
+   bottom: 0px;
+}
+.burger-menu-icon.active span {
+   -ms-transform: scale(0);
+   -webkit-transform: scale(0);
+   transform: scale(0);
+}
+.burger-menu-icon.active span:first-child {
+   -ms-transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+   top: 8px;
+}
+.burger-menu-icon.active span:last-child {
+   -ms-transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+   transform: rotate(45deg);
+   bottom: 8px;
 }
 .header-wrap {
    display: flex;
-   margin: 50px 0;
+   margin: var(--main-margin) 0;
    justify-content: space-between;
 }
 .header-link a {
-   font-size: 14px;
+   font-size: var(--nav-fs);
    color: #5e5e5e;
    transition: all 0.3s ease;
    position: relative;
@@ -97,10 +160,13 @@ h3 {
 .main-wrap {
    display: flex;
    justify-content: space-between;
-   margin: 50px 0;
+   margin: var(--main-margin) 0;
    align-items: center;
 }
-
+.main-wrap-photo img {
+   width: 100%;
+   height: 100%;
+}
 .about-contacts {
    width: 100%;
 }
@@ -113,12 +179,11 @@ h3 {
    max-width: 525px;
 }
 .about > h3 {
-   margin: 50px 0;
+   margin: var(--main-margin) 0;
    text-align: center;
 }
 .txt {
-   /*font-size: var(--text);*/
-   margin-bottom: 50px;
+   margin-bottom: var(--main-margin);
 }
 .contacts {
    transform: translateX(39px);
@@ -127,15 +192,14 @@ h3 {
    background: var(--main-color);
 }
 .contacts > h3 {
-   margin: 50px 50px;
+   margin: var(--main-margin);
 }
 .contact {
-   /*font-size: var(--text);*/
-   margin-left: 50px;
+   margin-left: var(--main-margin);
    margin-bottom: 15px;
 }
 .contact:last-child {
-   margin-bottom: 50px;
+   margin-bottom: var(--main-margin);
 }
 .contact-title {
    font-weight: bold;
@@ -143,7 +207,7 @@ h3 {
 }
 
 .skills > .container > h3 {
-   margin: 50px 0;
+   margin: var(--main-margin) 0;
    text-align: center;
 }
 .skills-wrap {
@@ -168,11 +232,10 @@ h3 {
 }
 .education-wrap h3 {
    text-align: center;
-   margin: 50px 0;
+   margin: var(--main-margin) 0;
 }
 .education-wrap {
-   /* font-size: var(--text);*/
-   margin-bottom: 50px;
+   margin-bottom: var(--main-margin);
 }
 .education-status {
    margin: 0 0 25px 75px;
@@ -252,7 +315,7 @@ h3 {
    width: 100%;
 }
 .portfolio-wrap h3 {
-   margin: 50px 0;
+   margin: var(--main-margin) 0;
    text-align: center;
 }
 .portfolio-cards-block {
@@ -262,7 +325,7 @@ h3 {
 }
 .porfolio-card {
    max-width: 260px;
-   margin: 0 0 50px 0;
+   margin: 0 0 var(--main-margin) 0;
 }
 
 .card-img {
@@ -317,20 +380,20 @@ h3 {
 }
 .expirience-wrap h3 {
    text-align: center;
-   margin: 50px 0;
+   margin: var(--main-margin) 0;
 }
 .expirience-text {
-   margin-bottom: 50px;
+   margin-bottom: var(--main-margin);
 }
 .code-wrap {
    width: 100%;
 }
 .code-wrap h3 {
-   margin: 50px 0;
+   margin: var(--main-margin) 0;
    text-align: center;
 }
 .code-example {
-   margin-bottom: 50px;
+   margin-bottom: var(--main-margin);
 }
 .blue {
    color: #1a4bce;
@@ -354,11 +417,11 @@ pre {
    background: var(--main-color);
 }
 .english-wrap h3 {
-   margin: 50px 0;
+   margin: var(--main-margin) 0;
    text-align: center;
 }
 .english-text {
-   margin-bottom: 50px;
+   margin-bottom: var(--main-margin);
 }
 .hobbies-icons {
    display: flex;
@@ -366,10 +429,10 @@ pre {
 }
 .hobbies-wrap h3 {
    text-align: center;
-   margin: 50px 0;
+   margin: var(--main-margin) 0;
 }
 .hobbies-icon {
-   margin: 0px 20px 50px;
+   margin: 0px 20px var(--main-margin);
    font-size: 80px;
 }
 footer {
@@ -385,30 +448,7 @@ footer {
 }
 .location {
    display: flex;
-   /*font-size: var(--text);*/
 }
 .location-date {
    margin-right: 30px;
 }
-
-/* contacts - w585px */
-/*
-@font-face{
-
-font-family: 'MyWebFont';
-
-src: url('../fonts/WebFont-Bold.eot');
-
-src: url('../fonts/WebFont-Bold.eot?iefix') format('eot'),
-
-url('../fonts/WebFont-Bold.woff') format('woff'),
-
-url('../fonts/WebFont-Bold.ttf') format('truetype'),
-
-url('../fonts/WebFont-Bold.svg#webfont') format('svg');
-
-font-weight: bold;
-
-font-style: normal;
-
-}*/
