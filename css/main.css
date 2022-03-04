@@ -53,6 +53,10 @@ h3 {
    font-weight: bold;
    font-size: var(--title);
 }
+h4 {
+   font-weight: bold;
+   font-size: var(--sub-title);
+}
 .burger-navigation {
    display: flex;
    position: fixed;
@@ -321,7 +325,8 @@ h3 {
 .portfolio-cards-block {
    display: flex;
    width: 100%;
-   justify-content: space-between;
+   flex-wrap: wrap;
+   justify-content: space-around;
 }
 .porfolio-card {
    max-width: 260px;
@@ -352,7 +357,7 @@ h3 {
    z-index: 1;
    transition: all 0.3s ease;
 }
-.card-name h3 {
+.card-name h4 {
    margin: 15px 0 0 0;
    color: #000;
    text-align: center;
@@ -364,7 +369,7 @@ h3 {
 .porfolio-card:hover > .card-img:after {
    opacity: 0;
 }
-.porfolio-card:hover > .card-name h3 {
+.porfolio-card:hover > .card-name h4 {
    transform: translateY(0);
 }
 .porfolio-card:hover > .card-img {
